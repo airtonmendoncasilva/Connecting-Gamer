@@ -20,9 +20,25 @@ export class AppComponent {
     {
       title: 'Perfil do Jogador',
       url: '/perfil',
-      icon:'contact'
+      icon:'person'
     },
-    
+    {
+      title: ' Buscar Jogadores',
+      url: '/buscarjogadores',
+      icon:'person-add'
+    },
+
+    {
+      title: 'Comunidade',
+      url:'/comunidade',
+      icon:'globe'
+    },
+
+    {
+      title: 'Chat',
+      url:'/chat',
+      icon:'chatboxes'
+    },
   ];
 
   constructor(
