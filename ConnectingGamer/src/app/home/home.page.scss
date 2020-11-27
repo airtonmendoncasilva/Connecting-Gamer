@@ -2,3 +2,20 @@
   max-height: 35vh;
   overflow: hidden;
 }
+
+ion-header{
+  --ion-color-primary:#133b5c;
+  --ion-color-secondary:#fcdab7;
+}
+
+ion-content{
+  --ion-color-primary:#1d2d50;
+}
+
+.nomeCompleto{
+  color: #fcdab7;
+}
+
+.sobre{
+  color: #fcdab7;
+}

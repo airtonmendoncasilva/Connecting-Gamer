@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { NavController } from '../../../node_modules/@ionic/angular';
 
 
 @Component({
@@ -9,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PerfilPage implements OnInit {
 
-  constructor() { }
+  constructor(private navCtrl: NavController) { }
 
-  ngOnInit() {
-
+  ngOnInit() {   
   }
+ 
+  abrirPagina(nomeDaPagina : string){
+    this.navCtrl.navigateForward(nomeDaPagina);
+  }
+  
+
 }

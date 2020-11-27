@@ -1,29 +1,28 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Chat</ion-title>
+  <ion-toolbar color="primary">
+    <ion-title color="secondary">Chat</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content color="primary">
   <ion-tabs>
+    <ion-tab-bar slot="bottom" color="primary">
 
-    <ion-tab-bar slot="bottom">
-      <ion-tab-button tab="arrow-back">
-        <ion-icon name="arrow-back"></ion-icon>
-        <ion-label>Voltar</ion-label>
+      <ion-tab-button tab="arrow-back" (click)="abrirPagina('comunidade')">
+        <ion-icon name="arrow-back" color="secondary"></ion-icon>
+        <ion-label color="secondary">Voltar</ion-label>
       </ion-tab-button>
 
-      <ion-tab-button tab="home">
-        <ion-icon name="home"></ion-icon>
-        <ion-label>Home</ion-label>
+      <ion-tab-button tab="home" (click)="abrirPagina('home')">
+        <ion-icon name="home" color="secondary"></ion-icon>
+        <ion-label color="secondary">Home</ion-label>
       </ion-tab-button>
 
       <ion-tab-button tab="settings">
-        <ion-icon name="help-circle"></ion-icon>
-        <ion-label>Ajuda</ion-label>
+        <ion-icon name="settings" color="secondary"></ion-icon>
+        <ion-label color="secondary">Configurações</ion-label>
       </ion-tab-button>
 
     </ion-tab-bar>
-
   </ion-tabs>
 </ion-content>
