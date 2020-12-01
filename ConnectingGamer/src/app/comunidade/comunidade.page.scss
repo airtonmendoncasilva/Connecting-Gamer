@@ -1,9 +1,44 @@
-ion-header{
-    --ion-color-primary:#133b5c;
-    --ion-color-secondary:#fcdab7;
-  }
-  
   ion-content{
     --ion-color-primary:#1d2d50;
     --ion-color-secondary:#fcdab7;
+    --ion-color-tertiary:#133b5c;
+  }
+
+  ion-slides {
+    height: 100%;
+  }
+
+  .swiper-slide {
+    display: block;
+  }
+
+  .swiper-slide h2 {
+    margin-top: 2.8rem;
+  }
+
+  .swiper-slide img {
+    max-height: 50%;
+    max-width: 80%;
+    margin: 60px 0 40px;
+    pointer-events: none;
+  }
+
+  h2{
+    color: #fcdab7;
+     }
+
+
+  b {
+    font-weight: 500;
+  }
+
+  p {
+    padding: 0 20px;
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--ion-color-step-600, #fcdab7);
+  }
+
+  p b {
+    color: var(--ion-text-color, #fcdab7);
   }

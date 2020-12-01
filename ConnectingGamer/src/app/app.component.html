@@ -1,22 +1,17 @@
-<ion-app>
-  <ion-split-pane>
-    <ion-menu type="overlay">
-      <ion-header>
-        <ion-toolbar color="primary">
-          <ion-title color="secondary">Connecting Gamer</ion-title>
-        </ion-toolbar>
-      </ion-header>
-      <ion-content>
-        <ion-list>
-          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
-            <ion-item [routerDirection]="'root'" [routerLink]="[p.url]">
-              <ion-icon slot="start" [name]="p.icon"></ion-icon>
-              <ion-label>
+<ion-app color="primary"> 
+  <ion-split-pane color ="primary">
+    <ion-menu type="overlay"color ="primary">
+      <ion-content fullscreen class="ion-padding" scroll-y="false" color = "primary">
+        <!-- <ion-list color ="primary"> -->
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages"color ="primary">
+            <ion-item [routerDirection]="'root'" [routerLink]="[p.url]"color="primary">
+              <ion-icon slot="start" [name]="p.icon" color="secondary"></ion-icon>
+              <ion-label color = "secondary">
                 {{p.title}}
               </ion-label>
             </ion-item>
           </ion-menu-toggle>
-        </ion-list>
+        <!-- </ion-list> -->
       </ion-content>
     </ion-menu>
     <ion-router-outlet main></ion-router-outlet>

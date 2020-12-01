@@ -7,3 +7,14 @@ ion-header{
     --ion-color-primary:#1d2d50;
     --ion-color-secondary:#fcdab7;
   }
+
+  .center {
+    width:125px;
+    height:125px;
+    position:absolute;
+    top:25%;
+    left:50%;
+    margin-top:-50px;
+    margin-left:-50px;
+  }
+  
