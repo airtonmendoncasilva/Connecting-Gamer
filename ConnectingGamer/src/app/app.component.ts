@@ -11,12 +11,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 })
 export class AppComponent {
   public appPages = [
-    {
-      title: 'Sobre',
-      url: '/home',
-      icon:'home' 
-    },
-
+    
     {
       title: 'Perfil do Jogador',
       url: '/perfil',
@@ -38,6 +33,11 @@ export class AppComponent {
       title: 'Chat',
       url:'/chat',
       icon:'chatboxes'
+    },
+    {
+      title: 'Sobre',
+      url: '/home',
+      icon:'alert' 
     },
   ];
 

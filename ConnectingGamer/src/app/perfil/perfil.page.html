@@ -1,8 +1,16 @@
 <ion-content color="primary">
 
   <ion-avatar class="center">
-    <img src="assets/flat.svg">
+    <img src="assets/patrick.png">
   </ion-avatar>
+  <div>
+    <ion-label>
+      <h2 class="nome">Patrick Estrela</h2>
+      <p class="email">patrick@email.com</p>
+      <p class="descricao">Lorem ipsum a class facilisis nullam rutrum, posuere est hendrerit nulla congue dolor, morbi vitae massa ut
+        habitasse. duis etiam et metus sollicitudin proin porta cursus.</p>
+    </ion-label>
+  </div>
 
   <ion-tabs>
     <ion-tab-bar slot="bottom" color="primary">
@@ -12,9 +20,9 @@
         <ion-label color="secondary">Voltar</ion-label>
       </ion-tab-button>
 
-      <ion-tab-button tab="home" (click)="abrirPagina('home')">
-        <ion-icon name="home" color="secondary"></ion-icon>
-        <ion-label color="secondary">Home</ion-label>
+      <ion-tab-button tab="alert" (click)="abrirPagina('home')">
+        <ion-icon name="alert" color="secondary"></ion-icon>
+        <ion-label color="secondary">Sobre</ion-label>
       </ion-tab-button>
 
       <ion-tab-button tab="help">

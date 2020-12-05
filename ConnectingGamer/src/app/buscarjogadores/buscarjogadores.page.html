@@ -1,15 +1,17 @@
 <ion-header truslucent>
-  <ion-toolbar color="primary">
+  <ion-toolbar color="secondary">
     <ion-buttons slot="start">
-      <ion-menu-button color="secondary"></ion-menu-button>
+      <ion-menu-button color="danger"></ion-menu-button>
     </ion-buttons>
-    <ion-title color="secondary">
+    <ion-title color="danger">
       <h3 class="titulo">Procure Jogares</h3>
     </ion-title>
   </ion-toolbar>
-  <ion-toolbar color="primary">
-    <ion-searchbar color="tertiary" (click)="showLoadingDefault()"></ion-searchbar>
-  </ion-toolbar>
+  <ion-item color ="primary">
+    <ion-searchbar color="secondary" (click)="showLoadingDefault()"></ion-searchbar>
+  </ion-item>
+
+
 </ion-header>
 
 <ion-content color="primary">
@@ -21,7 +23,7 @@
       </ion-avatar>
       <ion-label>
         <h2 text-capitalize>{{ user.name?.firts}} {{user.name?.last}}</h2>
-        <p>{{user.email}}</p>
+        <p style="color:#fcdab7;">{{user.email}}</p>
       </ion-label>
 
     </ion-item>

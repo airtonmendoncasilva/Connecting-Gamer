@@ -18,3 +18,38 @@ ion-header{
     margin-left:-50px;
   }
   
+  .nome{
+    width:200px;
+    height:125px;
+    position:absolute;
+    font-size:24px;
+    text-align: center;
+    top:45%;
+    left:40%;
+    margin-top:-50px;
+    margin-left:-50px;
+  }
+
+  .email{
+    width:200px;
+    height:125px;
+    position:absolute;
+    font-size:16px;
+    text-align: center;  
+    top:50%;
+    left:40%;
+    margin-top:-50px;
+    margin-left:-50px;
+  }
+
+  .descricao{
+    width:250px;
+    height:125px;
+    position:absolute;
+    font-size:14px;
+    text-align: center;  
+    top:55%;
+    left:32%;
+    margin-top:-50px;
+    margin-left:-50px;
+  }
