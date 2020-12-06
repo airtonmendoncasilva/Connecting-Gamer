@@ -4,10 +4,10 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'perfil',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
-
+  
   {
     path: '',
     redirectTo: 'perfil',
@@ -16,12 +16,18 @@ const routes: Routes = [
 
   {
     path: '',
-    redirectTo:'perfil',
+    redirectTo: 'buscarjogadores',
+    pathMatch: 'full'
+  },
+
+  {
+    path: '',
+    redirectTo:'comunidade',
     pathMatch:'full',
   },
   {
     path:'',
-    redirectTo:'perfil',
+    redirectTo:'home',
     pathMatch:'full',
   },
 
@@ -45,6 +51,8 @@ const routes: Routes = [
   { path: 'chat', 
     loadChildren: () => import('./chat/chat.module').then(m =>m.ChatPageModule)
   },
+  { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
+
 ];
 
 @NgModule({
