@@ -1,5 +1,8 @@
 {
   "name": "ConnectingGamer",
-  "integrations": {},
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
   "type": "angular"
 }

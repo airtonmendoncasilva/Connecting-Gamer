@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavController } from '../../../node_modules/@ionic/angular';
+import { AlertController, NavController } from '../../../node_modules/@ionic/angular';
 
 
 @Component({
@@ -9,14 +9,21 @@ import { NavController } from '../../../node_modules/@ionic/angular';
 })
 export class PerfilPage implements OnInit {
 
-  constructor(private navCtrl: NavController) { }
+  constructor(private navCtrl: NavController, private alertCtrl: AlertController) { }
 
-  ngOnInit() {   
+  ngOnInit() {
   }
- 
-  abrirPagina(nomeDaPagina : string){
+
+  abrirPagina(nomeDaPagina: string) {
     this.navCtrl.navigateForward(nomeDaPagina);
   }
-  
+  async abrirAlertSimples() {
+    let alertSimples = await this.alertCtrl.create({
+      header: 'Olá Está com dúvida?',
+      message: 'Esta tela é sobre as informações do perfil. Espero ter te ajudado :).',
+      buttons: ['OK']
+    });
+    await alertSimples.present();
 
+  }
 }
